@@ -1,0 +1,169 @@
+' /* Copyright Yahoo, Licensed under the terms of the Apache 2.0 license. See LICENSE file in project root for terms. */
+
+@startmindmap
+
+!theme plain
+
+
+!$r0 = "[#ff0000] **0**"
+!$r1 = "[#FFC0CB] **1**"
+!$r2 = "[#ffa500] **2**"
+!$r3 = "[#398e14] **3**"
+!$r4 = "[#00ff00] **4**"
+!$r5 = "[#a3a3ff] **5**"
+
+
+<style>
+mindmapDiagram 
+{
+   :depth(0) {
+    BackGroundColor #BDE3ee
+    LineColor #BDE3ee
+  }
+  :depth(1) {
+    BackGroundColor #BDE3ee
+    LineColor #BDE3ee
+  }
+   :depth(2) {
+    BackGroundColor #BDE3dd
+    LineColor #BDE3dd
+  }
+   :depth(3) {
+    BackGroundColor #BDE3FF
+    LineColor #BDE3FF
+  }
+   :depth(4) {
+    BackGroundColor HoneyDew
+    LineColor #BDE3dd
+  }
+  :depth(5) {
+    BackGroundColor #BDE3dd
+    LineColor #BDE3dd
+  }
+   :depth(6) {
+    BackGroundColor #BDE3dd
+    LineColor #BDE3dd
+  }
+    
+}
+</style>
+
+Title Risk-Based Prioritization Decision Tree 
+
+* **Exploitation**
+**_ none
+*** **Automatable** 
+****_ no
+***** **Technical Impact** 
+******_ partial
+******* **Mission & Well-being**
+********_ medium
+*********$r5
+********_ high
+*********$r5
+******_ total
+******* **Mission & Well-being**
+********_ medium
+*********$r5
+********_ high
+*********$r4
+
+****_ yes
+***** **Technical Impact** 
+******_ partial
+******* **Mission & Well-being**
+********_ medium
+*********$r5
+********_ high
+*********$r3
+******_ total
+******* **Mission & Well-being**
+********_ medium
+*********$r5
+********_ high
+*********$r3
+
+
+**_ poc
+*** **Automatable** 
+****_ no
+***** **Technical Impact** 
+******_ partial
+******* **Mission & Well-being**
+********_ medium
+*********$r5
+********_ high
+*********$r4
+******_ total
+******* **Mission & Well-being**
+********_ medium
+*********$r4
+********_ high
+*********$r3
+
+****_ yes
+***** **Technical Impact** 
+******_ partial
+******* **Mission & Well-being**
+********_ medium
+*********$r5
+********_ high
+*********$r3
+******_ total
+******* **Mission & Well-being**
+********_ medium
+*********$r4
+********_ high
+*********$r3
+
+
+**_ active
+*** **Automatable** 
+****_ no
+***** **Technical Impact** 
+******_ partial
+******* **Mission & Well-being**
+********_ medium
+*********$r4
+********_ high
+*********$r2
+******_ total
+******* **Mission & Well-being**
+********_ medium
+*********$r2
+********_ high
+*********$r1
+
+****_ yes
+***** **Technical Impact** 
+******_ partial
+******* **Mission & Well-being**
+********_ medium
+*********$r2
+********_ high
+*********$r1
+******_ total
+******* **Mission & Well-being**
+********_ medium
+*********$r0
+********_ high
+*********$r0
+
+legend
+    |= Number |= Description |
+    |  <#ff0000:sunny:> 0   | Act ASAP |
+    |  <#FFC0CB:sunny:> 1   | Act |
+    |  <#ffa500:sunny:> 2   | Attend  |
+    |  <#398e14:sunny:> 3   | Attend |
+    |  <#00ff00:sunny:> 4   | Track Closely|
+    |  <#a3a3ff:sunny:> 5   | Track |
+endlegend
+
+center footer <:triangular_flag_on_post:> This differs from CISA SSVC:\n 1. 2 levels for Mission & Well-being vs 3\n2. Additional Decision for highest priority
+
+@endmindmap
+
+
+
+https://crashedmind.github.io/PlantUMLHitchhikersGuide/color/color.html
+

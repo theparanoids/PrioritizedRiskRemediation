@@ -1,0 +1,71 @@
+' /* Copyright Yahoo, Licensed under the terms of the Apache 2.0 license. See LICENSE file in project root for terms. */
+
+@startwbs
+!theme plain
+
+<style>
+wbsDiagram {
+  .riskremediation {
+      BackgroundColor lightblue
+  }
+  .risk {
+      BackgroundColor pink
+  }
+  .remediation {
+      BackgroundColor lightgreen
+  }
+  
+}
+
+</style>
+
+Title Risk Remediation Taxonomy for CVEs
+
+* **Risk Remediation** <<riskremediation>>
+** **Risk** <<risk>>
+*** **Threat** <<risk>>
+
+
+*** **Impact** <<risk>>
+
+
+*** **Vulnerability** <<risk>>
+
+
+
+** **Remediation** <<remediation>> 
+
+
+legend
+    |= Icon |= Description |
+    |  <:closed_book:>  | Internal |
+    |  <:green_book:>   | Open and available to anyone |
+    |  <:dollar:>       | Paid product  |
+    |  <:writing_hand:> | Manual |
+    |  <:black_square_button:> | Relevant values defined in a standard |
+endlegend
+
+
+@endwbs
+
+Themes
+-------
+This gives the best clarity
+!theme plain 
+
+Other themes considered:
+!theme metal
+!theme materia
+!theme cerulean
+!theme hacker
+
+icons
+------
+https://plantuml.com/creole
+https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhDpS_AL31qC-5oICrB0Oe00000
+
+preprocessor
+------------
+Consider using plantuml pre-processor in future to maintain definitions in one place/file. 
+define: !$cisa_kev = "<:green_book:> **CISA Known Exploited Vulnerabilities (CISA KEV)**"
+use: $cisa_kev 

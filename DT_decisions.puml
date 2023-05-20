@@ -1,0 +1,81 @@
+' /* Copyright Yahoo, Licensed under the terms of the Apache 2.0 license. See LICENSE file in project root for terms. */
+
+@startmindmap
+!theme plain
+
+<style>
+
+mindmapDiagram {
+   :depth(0) {
+    BackGroundColor #BDE3ee
+    LineColor #BDE3ee
+  }
+   :depth(1) {
+    BackGroundColor #BDE3FF
+    LineColor #BDE3FF
+  }
+   :depth(2) {
+    BackGroundColor #BDE3dd
+    LineColor #BDE3dd
+  }
+}
+</style>
+
+Title Decision Tree Decision Nodes Inputs
+
+* **Exploitation**
+** **None**
+** **Poc**
+*** ** Y: Known Exploit Available (OR)**
+**** **public, poc_public, commercial, private, virus_malware, wormified:** <:dollar:> Vendor DB
+** **Active**
+*** ** Y: Known Actively Exploited (OR)**
+**** ** Y: <:closed_book:> Bug Bounty**
+**** ** Y: <:closed_book:> Incident Response**
+**** ** Y: <:green_book:> CISA Known Exploited Vulnerabilities <CISA KEV>**
+**** ** Y: <:green_book:> (EPSS Exploit Prediction Scoring System) Score above Threshold**
+**** ** Y: <:dollar:> Vendor DBs**
+**** ** Y: <:green_book:> <:dollar:> Cyber Threat Intelligence (CTI) e.g. social media**
+
+
+* **Automatable** 
+** **No**
+** **Yes**
+*** **(OR)**
+
+**** **(AND)**
+***** **None: User Interaction** <:green_book:> [CVSS Base Score - Exploitability metrics]
+***** **Low: Attack Complexity** <:green_book:> [CVSS Base Score - Exploitability metrics]
+***** **None, Low: Privileges Required **<:green_book:> [CVSS Base Score - Exploitability metrics]
+***** ** <s>Network: Attack Vector** <:green_book:> [CVSS Base Score - Exploitability metrics]</s>
+***** **Location_remote: Exploit Level** <:dollar:> (VendorDB) 
+**** **RCE**
+***** **Y: Remote Code Execution** <:green_book:> [CVSS Title, Description]
+
+* **Technical Impact**
+** **Partial**
+*** **DOS**
+**** **Y: Denial Of Service Only** <:green_book:> [CVSS Title, Description]
+** **Total**
+*** **(OR)**
+**** **High: Confidentiality **<:green_book:> [CVSS Base Score]
+**** **High: Integrity **<:green_book:> [CVSS Base Score]
+
+
+* **<:closed_book:> <:writing_hand:> Mission & Well-being **
+** **Low**
+*** **(AND)** 
+**** **Low: Mission Prevalence** 
+**** **Low: Customer Well-being Impact** 
+** **Medium** 
+*** **(AND)** 
+**** **Medium: Mission Prevalence** 
+**** **Medium: Customer Well-being Impact**
+** **High** 
+*** **(AND)** 
+**** **High: Mission Prevalence** 
+**** **High: Customer Well-being Impact** 
+
+center footer <:triangular_flag_on_post:> This is not intended to be a detailed flow-chart
+
+@endmindmap
