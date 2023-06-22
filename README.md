@@ -12,7 +12,7 @@ A Risk-based Decision Tree is defined with
 * output Decisions
 
 The Risk Remediation Taxonomy and Decision Tree are part of a conference presentation by Yahoo Chris Madden: https://www.bsidesdub.ie/ May 27 2023.
-* See the ![slide deck](./BSidesVulnerabilityScoring_YahooParanoidsProdSec.pdf) presented.
+* See the [slide deck](./BSidesVulnerabilityScoring_YahooParanoidsProdSec.pdf) presented.
 * The presentation recording will be available from https://www.youtube.com/@securitybsidesdublin9663.
 
 # Risk Remediation
