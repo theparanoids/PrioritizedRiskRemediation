@@ -51,7 +51,14 @@ Title Risk Remediation Taxonomy for CVEs
 
 
 *****_ **Known Exploit Available**
-******_ <:dollar:>** Vendor DBs** which include data about (weaponized) vulnerabilities from tools like Metasploit
+******_ **Weaponized Exploit**
+*******_ <:green_book:>** MetaSploit** 
+*******_ <:green_book:>** Nuclei** 
+*******_ <:dollar:>** Vendor DBs** which may include other sources
+******_ **Proof Of Concept Exploit**
+*******_ <:green_book:>** ExploitDB** 
+*******_ <:green_book:>** GitHub** 
+*******_ <:dollar:>** Vendor DBs** which may include other sources
 ******_ <:green_book:> <:dollar:>  **Cyber Threat Intelligence (CTI)** e.g. social media
 ******_ <:green_book:> <:dollar:> **Exploit Code Maturity **
 *******_ <:dollar:> **Vendor DBs** 
