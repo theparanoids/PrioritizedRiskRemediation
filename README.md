@@ -3,11 +3,6 @@
 A Risk-Based Prioritization Taxonomy for prioritizing CVEs (Common Vulnerabilities and Exposures).
 
 # Background
-A Risk Remediation Taxonomy is defined here to support Risk Based Prioritization of CVEs:# Risk-Based Prioritization of CVEs
-
-A Risk-Based Prioritization Taxonomy for prioritizing CVEs (Common Vulnerabilities and Exposures).
-
-# Background
 A Risk Remediation Taxonomy is defined here to support Risk Based Prioritization of CVEs:
 * the constituent components of risk and remediation for a CVE 
 * the associated data sources for these components
@@ -17,16 +12,7 @@ A Risk-based Decision Tree is defined with
 * output Decisions
 
 The Risk Remediation Taxonomy and Decision Tree are part of a conference presentation by Yahoo Chris Madden: https://www.bsidesdub.ie/ May 27 2023.
-* See the [slide deck](./BSidesVulnerabilityScoring_YahooParanoidsProdSec.pdf) presented.
-* The presentation recording is [here](https://www.youtube.com/watch?v=oMZN810xfck)
-* the constituent components of risk and remediation for a CVE 
-* the associated data sources for these components
-
-A Risk-based Decision Tree is defined with
-* inputs for the Decision Tree Decision Nodes
-* output Decisions
-
-See the [slidedeck](https://docs.google.com/presentation/d/1YQJ5MkXT8LluMncN1_XZCWBvSyQjtv5_ID_03-ZYbEg/edit#slide=id.g1e16e1b7df1_0_190) presented by Yahoo Chris Madden at https://www.bsidesdub.ie/ conference May 27 2023. 
+* See the [**slide deck**](./BSidesVulnerabilityScoring_YahooParanoidsProdSec.pdf) and the [**recording**](https://www.youtube.com/watch?v=oMZN810xfck).
 
 # Risk Remediation
 ## A tree with the constituent components of Risk and Remediation for a CVE - Top Level
@@ -61,12 +47,6 @@ The Decision Tree with output Decisions
 
 Diagram Source: [DT_Full.puml](./DT_Full.puml).
 
-# Risk-based Decision Tree Decisions 3 Level 
-The Decision Tree with output Decisions where each Decision Node has 3 outputs.
-
-![RiskRemediationTop](./images/DT_Full_mission_high.png)
-
-Diagram Source: [DT_Full_mission_high.puml](./DT_Full_mission_high.puml).
 
 # Contribute
 Please refer to the [Contributing.md](./Contributing.md) file for information about how to get involved. We welcome issues, questions, and pull requests.

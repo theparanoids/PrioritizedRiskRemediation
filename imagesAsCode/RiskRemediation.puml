@@ -25,105 +25,71 @@ Title Risk Remediation Taxonomy for CVEs
 
 * **Risk Remediation** <<riskremediation>>
 
-**[#pink]:==Per Vulnerability 
+
+
+**[#pink]:==Threat 
+----
+----
+----;
+***_ **Likelihood of Exploit**
+****_ **Known Actively Exploited in your Organization**
+*****_ <:closed_book:> **Bug Bounty** has the CVE been exploited?
+*****_ <:closed_book:> **Incident Response** has the CVE been exploited? 
+****_ **Known Actively Exploited in the Wild**
+*****_ <:green_book:> **CISA Known Exploited Vulnerabilities (CISA KEV)**
+*****_ <:dollar:> **Vendor DBs** (typicaly include CISA KEV data)
+*****_ <:green_book:> <:dollar:> **Cyber Threat Intelligence (CTI)** e.g. social media
+****_  <:green_book:> **Probability of Exploitation Activity in the next 30 days % **(EPSS Exploit Prediction Scoring System v3)
+*****_ **Exploitation activity in the wild (ground truth)** Fortinet, AlienVault, ShadowServer, GreyNoise
+*****_ **Publicly available exploit code** ExploitDB, GitHub, MetaSploit
+*****_ CVE listed on CISA KEV, Google Project Zero, Trend Micro's Zero Day Initiative
+*****_ **Social Media** Mentions/discussion on Twitter
+*****_ **Offensive security tools and scanners** Intrigue, sn1per, jaeles, nuclei
+*****_ **References with labels** MITRE CVE List, NVD
+*****_ **Keyword description of the vulnerability** Text description in MITRE CVE List
+*****_ **CVSS metrics** National Vulnerability Database (NVD)
+*****_ **CWE** National Vulnerability Database (NVD)
+*****_ **Vendor labels** National Vulnerability Database (NVD)
+*****_ **Age of the vulnerability** Days since CVE published in MITRE CVE list
+****_ **Known Exploit Available**
+*****_ **Weaponized Exploit**
+******_ <:green_book:>** MetaSploit** 
+******_ <:green_book:>** Nuclei** 
+******_ <:dollar:>** Vendor DBs** which may include other sources
+*****_ **Proof Of Concept Exploit**
+******_ <:green_book:>** ExploitDB** 
+******_ <:green_book:>** GitHub** 
+******_ <:dollar:>** Vendor DBs** which may include other sources
+*****_ <:green_book:> <:dollar:>  **Cyber Threat Intelligence (CTI)** e.g. social media
+*****_ <:green_book:> <:dollar:> **Exploit Code Maturity **
+******_ <:dollar:> **Vendor DBs** 
+****** Not Defined, Unproven, Proof-Of-Concept, Functional, High [CVSS Temporal]
+****** e.g. public, poc_public, virus_malware, wormified, private, commercial, exploit_unknown, unknown
+***_ <:green_book:> <:dollar:> **Report Confidence **
+**** Not Defined, Unknown, Confirmed, Reasonable [CVSS Temporal]
+
+
+
+
+**[#pink]:==Vulnerability 
 ----
 ----
 ----;
 
+***_ **Exploitability metrics **
+****_ <:green_book:> **Attack Vector** [CVSS Base Score]
+****_ <:green_book:> **Attack Complexity** [CVSS Base Score]
+****_ <:green_book:> **Privileges Required** [CVSS Base Score]
+****_ <:green_book:> **User Interaction** [CVSS Base Score]
 
-***[#pink] **Threat**
+***_ **Impact metrics **
+****_ <:green_book:> **Confidentiality, Integrity, Availability (CIA):** None, Low, High [CVSS Base Score]
+***_ **Scope** 
+****_ <:green_book:> Unchanged, Changed [CVSS Base score]
 
-****_ **Likelihood of Exploit**
-*****_ **Known Actively Exploited in your Organization**
-******_ <:closed_book:> **Bug Bounty** has the CVE been exploited?
-******_ <:closed_book:> **Incident Response** has the CVE been exploited? 
-*****_ **Known Actively Exploited in the Wild**
-******_ <:green_book:> **CISA Known Exploited Vulnerabilities (CISA KEV)**
-******_ <:dollar:> **Vendor DBs** (typicaly include CISA KEV data)
-******_ <:green_book:> <:dollar:> **Cyber Threat Intelligence (CTI)** e.g. social media
-*****_  <:green_book:> **Probability of Exploitation Activity in the next 30 days % **(EPSS Exploit Prediction Scoring System v3)
-******_ **Exploitation activity in the wild (ground truth)** Fortinet, AlienVault, ShadowServer, GreyNoise
-******_ **Publicly available exploit code** ExploitDB, GitHub, MetaSploit
-******_ CVE listed on CISA KEV, Google Project Zero, Trend Micro's Zero Day Initiative
-******_ **Social Media** Mentions/discussion on Twitter
-******_ **Offensive security tools and scanners** Intrigue, sn1per, jaeles, nuclei
-******_ **References with labels** MITRE CVE List, NVD
-******_ **Keyword description of the vulnerability** Text description in MITRE CVE List
-******_ **CVSS metrics** National Vulnerability Database (NVD)
-******_ **CWE** National Vulnerability Database (NVD)
-******_ **Vendor labels** National Vulnerability Database (NVD)
-******_ **Age of the vulnerability** Days since CVE published in MITRE CVE list
-*****_ **Known Exploit Available**
-******_ **Weaponized Exploit**
-*******_ <:green_book:>** MetaSploit** 
-*******_ <:green_book:>** Nuclei** 
-*******_ <:dollar:>** Vendor DBs** which may include other sources
-******_ **Proof Of Concept Exploit**
-*******_ <:green_book:>** ExploitDB** 
-*******_ <:green_book:>** GitHub** 
-*******_ <:dollar:>** Vendor DBs** which may include other sources
-******_ <:green_book:> <:dollar:>  **Cyber Threat Intelligence (CTI)** e.g. social media
-******_ <:green_book:> <:dollar:> **Exploit Code Maturity **
-*******_ <:dollar:> **Vendor DBs** 
-******* Exploit Code Maturity: Not Defined, Unproven, Proof-Of-Concept, Functional, High [CVSS V3 Temporal Metrics]
-******* Exploit Maturity: Not Defined, Attacked, Proof-Of-Concept, Unreported   [CVSS V4 Threat Metrics]
-******* e.g. public, poc_public, virus_malware, wormified, private, commercial, exploit_unknown, unknown
+** **Asset** <<risk>>
 
-
-****_ <:green_book:> <:dollar:> **Report Confidence **
-***** Not Defined, Unknown, Confirmed, Reasonable [CVSS Temporal]
-
-
-
-***[#pink] **Vulnerability**
-
-
-****_ **Exploitability Metrics ** [CVSS Base Metric]
-*****_ <:green_book:> **Attack Vector** 
-*****_ <:green_book:> **Attack Complexity** 
-*****_ <:green_book:> **Attack Requirements** [CVSS Base Metric v4]
-*****_ <:green_book:> **Privileges Required** 
-*****_ <:green_book:> **User Interaction** 
-
-
-
-***[#pink] **Technical Impact**
-
-****_ <:green_book:> **Vulnerable System Impact Metrics** [CVSS Base Metric]
-*****_ <:green_book:> **Confidentiality**  
-*****_ <:green_book:> **Integrity**
-*****_ <:green_book:> **Availability** 
-*****_ <:green_book:> --Scope-- [replaced with Subsequent System Impact Metrics in CVSS v4]
-
-
-****_ <:green_book:> **Subsequent System Impact Metrics** [CVSS Base Metric v4]
-*****_ <:green_book:> **Confidentiality** 
-*****_ <:green_book:> **Integrity** 
-*****_ <:green_book:> **Availability** 
-
-****_ <:green_book:> **Vulnerabilities by Impact Types** [CVEDetails.com]
-*****_ <:green_book:> **Privilege Escalation** 
-*****_ <:green_book:> **Code Execution** 
-*****_ <:green_book:> **Denial of Service ** 
-*****_ <:green_book:> **Information Leak ** 
-*****_ <:green_book:> **Bypass** 
-
-****_ <:green_book:> **Microsoft Exploitability Index** [Microsoft Products]
-*****_ <:green_book:> **Elevation of Privilege** 
-*****_ <:green_book:> **Remote Code Execution** 
-*****_ <:green_book:> **Denial of Service ** 
-*****_ <:green_book:> **Information Disclosure ** 
-*****_ <:green_book:> **Security Feature Bypass** 
-*****_ <:green_book:> **Spoofing** 
-*****_ <:green_book:> **Tampering** 
-
-
-**[#orange]:==Per Asset 
-----
-----
-----;
-
-*** **Impact** <<asset>>
+*** **Impact** <<risk>>
 
 ****_ **Exploitable**
 *****_ <:closed_book:> **Affected stack component versions in place** e.g. SpringShell Spring Framework exploitability depended on certain JDK versions
@@ -148,7 +114,7 @@ Title Risk Remediation Taxonomy for CVEs
 *****_ **Impact** 
 ****** the impact on the Confidentiality/Integrity/Availability of the platform/tenants/data involved by the successful exploitation of the security vulnerability found [Vulnerability Impact Scoring System (VISS)]
 
-*** **Likelihood** <<asset>>
+*** **Likelihood** <<risk>>
 ****_ <:closed_book:> **Incident Response** has the Asset been attacked?
 ****_ <:closed_book:> **Number of assets with that CVE (SBOMs)**
 ****_ <:closed_book:> **Number of instances of that CVE (SBOMs)**
