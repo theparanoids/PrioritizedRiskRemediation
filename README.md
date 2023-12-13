@@ -19,13 +19,13 @@ The Risk Remediation Taxonomy and Decision Tree are part of a conference present
 ![RiskRemediationTop](./images/RiskRemediation_top.png)
 
 
-Diagram Source: [RiskRemediation_top.puml](./RiskRemediation_top.puml)
+Diagram Source: [RiskRemediation_top.puml](./imagesAsCode/RiskRemediation_top.puml)
 
 
 ## A tree with the constituent components of Risk and Remediation for a CVE - and associated data sources 
 ![RiskRemediation](./images/RiskRemediation.png)
 
-Diagram Source: [RiskRemediation.puml](./RiskRemediation.puml)
+Diagram Source: [RiskRemediation.puml](./imagesAsCode/RiskRemediation.puml)
 
 
 
@@ -37,7 +37,7 @@ The inputs for the Decision Tree Decision Nodes - and associated data sources fr
 
 ![RiskRemediationTop](./images/DT_decisions.png)
 
-Diagram Source: [RiskRemediation_top.puml](./DT_decisions.puml)
+Diagram Source: [RiskRemediation_top.puml](./imagesAsCode/DT_decisions.puml)
 
 
 # Risk-based Decision Tree Decisions
@@ -45,7 +45,7 @@ The Decision Tree with output Decisions
 
 ![RiskRemediationTop](./images/DT_Full.png)
 
-Diagram Source: [DT_Full.puml](./DT_Full.puml).
+Diagram Source: [DT_Full.puml](./imagesAsCode/DT_Full.puml).
 
 
 # Contribute
