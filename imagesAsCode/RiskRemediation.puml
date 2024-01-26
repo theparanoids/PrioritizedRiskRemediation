@@ -152,8 +152,7 @@ Title Risk Remediation Taxonomy for CVEs/vulnerabilities
 *****_ **Loss** 
 ****** **Factor Analysis of Information Risk (FAIR)** Productivity, Response, Replacement, Reputation, Competitive advantage, Judgments and fines
 
-*****_ **Impact** 
-****** **Vulnerability Impact Scoring System (VISS)** the impact on the Confidentiality / Integrity / Availability of the platform/tenants/data involved by the successful exploitation of the security vulnerability found 
+**** **Vulnerability Impact Scoring System (VISS)** the impact on the Confidentiality / Integrity / Availability of the platform/tenants/data involved by the successful exploitation of the security vulnerability found 
 
 *** **Likelihood** <<asset>>
 ****_ <:closed_book:> **Incident Response** has the Asset been attacked?
