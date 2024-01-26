@@ -11,39 +11,50 @@ wbsDiagram {
   .risk {
       BackgroundColor pink
   }
+  .asset {
+      BackgroundColor orange
+  }
   .remediation {
       BackgroundColor lightgreen
   }
-  
 }
 
 </style>
 
-Title Risk Remediation Taxonomy for CVEs
+Title Risk Remediation Taxonomy for CVEs/vulnerabilities
 
 * **Risk Remediation** <<riskremediation>>
-** **Risk** <<risk>>
-*** **Threat** <<risk>>
+
+**[#pink]:==Per Vulnerability 
+----
+----
+----;
 
 
-*** **Impact** <<risk>>
+***[#pink] **Threat**
+****_ **Evidence or Probability of Exploit Activity** How likely is it to be exploited? e.g. based on known or predicted exploitation activity.
+****_ **Exploitability Metrics ** How easy is it to exploit? e.g. is it easily automated.
+
+***[#pink] ** Impact** 
+****_ ** Impact ** What's the impact of exploitation? e.g. Denial of Service, Files can be read or written.
 
 
-*** **Vulnerability** <<risk>>
+
+**[#orange]:==Per Asset 
+----
+----
+----;
+
+*** **Impact** <<asset>> 
+****_ What's the impact on the Asset? e.g. none due to compensating controls, service disruption.
+
+*** **Likelihood** <<asset>>
+****_ What's the Likelihood that the Asset will be exploited? given all the vulnerabilities, compensating controls, runtime context,....
 
 
 
 ** **Remediation** <<remediation>> 
-
-
-legend
-    |= Icon |= Description |
-    |  <:closed_book:>  | Internal |
-    |  <:green_book:>   | Open and available to anyone |
-    |  <:dollar:>       | Paid product  |
-    |  <:writing_hand:> | Manual |
-    |  <:black_square_button:> | Relevant values defined in a standard |
-endlegend
+***_ How easy is it to fix the vulnerabilities?
 
 
 @endwbs

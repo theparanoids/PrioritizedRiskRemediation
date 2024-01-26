@@ -21,7 +21,7 @@ wbsDiagram {
 
 </style>
 
-Title Risk Remediation Taxonomy for CVEs
+Title Risk Remediation Taxonomy for CVEs/vulnerabilities
 
 * **Risk Remediation** <<riskremediation>>
 
@@ -33,89 +33,96 @@ Title Risk Remediation Taxonomy for CVEs
 
 ***[#pink] **Threat**
 
-****_ **Likelihood of Exploit**
-*****_ **Known Actively Exploited in your Organization**
-******_ <:closed_book:> **Bug Bounty** has the CVE been exploited?
-******_ <:closed_book:> **Incident Response** has the CVE been exploited? 
-*****_ **Known Actively Exploited in the Wild**
-******_ <:green_book:> **CISA Known Exploited Vulnerabilities (CISA KEV)**
-******_ <:dollar:> **Vendor DBs** (typicaly include CISA KEV data)
-******_ <:green_book:> <:dollar:> **Cyber Threat Intelligence (CTI)** e.g. social media
-*****_  <:green_book:> **Probability of Exploitation Activity in the next 30 days % **(EPSS Exploit Prediction Scoring System v3)
-******_ **Exploitation activity in the wild (ground truth)** Fortinet, AlienVault, ShadowServer, GreyNoise
-******_ **Publicly available exploit code** ExploitDB, GitHub, MetaSploit
-******_ CVE listed on CISA KEV, Google Project Zero, Trend Micro's Zero Day Initiative
-******_ **Social Media** Mentions/discussion on Twitter
-******_ **Offensive security tools and scanners** Intrigue, sn1per, jaeles, nuclei
-******_ **References with labels** MITRE CVE List, NVD
-******_ **Keyword description of the vulnerability** Text description in MITRE CVE List
-******_ **CVSS metrics** National Vulnerability Database (NVD)
-******_ **CWE** National Vulnerability Database (NVD)
-******_ **Vendor labels** National Vulnerability Database (NVD)
-******_ **Age of the vulnerability** Days since CVE published in MITRE CVE list
-*****_ **Known Exploit Available**
-******_ **Weaponized Exploit**
+
+
+
+****_ **Likelihood of Exploit** How likely is it to be exploited? 
+*****_ **Known evidence or activity**
+******_ **Known Actively Exploited in your Organization**
+*******_ <:closed_book:> **Bug Bounty** has the CVE been exploited?
+*******_ <:closed_book:> **Incident Response** has the CVE been exploited? 
+******_ **Known Actively Exploited in the Wild**
+*******_ <:green_book:> **CISA KEV** Known Exploited Vulnerabilities
+*******_ <:green_book:> <:dollar:> **Cyber Threat Intelligence (CTI)** e.g. social media, vendors
+******_ **Weaponized Exploit** ready to run in a tool or script
 *******_ <:green_book:>** MetaSploit** 
 *******_ <:green_book:>** Nuclei** 
 *******_ <:dollar:>** Vendor DBs** which may include other sources
-******_ **Proof Of Concept Exploit**
+******_ **Proof Of Concept Exploit** proof-of-concept exploit code exists
 *******_ <:green_book:>** ExploitDB** 
 *******_ <:green_book:>** GitHub** 
 *******_ <:dollar:>** Vendor DBs** which may include other sources
-******_ <:green_book:> <:dollar:>  **Cyber Threat Intelligence (CTI)** e.g. social media
-******_ <:green_book:> <:dollar:> **Exploit Code Maturity **
-*******_ <:dollar:> **Vendor DBs** 
-******* Exploit Code Maturity: Not Defined, Unproven, Proof-Of-Concept, Functional, High [CVSS V3 Temporal Metrics]
-******* Exploit Maturity: Not Defined, Attacked, Proof-Of-Concept, Unreported   [CVSS V4 Threat Metrics]
-******* e.g. public, poc_public, virus_malware, wormified, private, commercial, exploit_unknown, unknown
 
 
-****_ <:green_book:> <:dollar:> **Report Confidence **
-***** Not Defined, Unknown, Confirmed, Reasonable [CVSS Temporal]
+*****_  <:green_book:> **Probability of Exploitation Activity in the next 30 days % **(EPSS Exploit Prediction Scoring System v3) which covers the range of proability from 0 to 1.
 
-
-
-***[#pink] **Vulnerability**
-
-
-****_ **Exploitability Metrics ** [CVSS Base Metric]
+****_ **Exploitability Metrics ** How easy is it to exploit? e.g. is it easily automated. [CVSS Base Metric - Exploitability Metrics]
 *****_ <:green_book:> **Attack Vector** 
 *****_ <:green_book:> **Attack Complexity** 
 *****_ <:green_book:> **Attack Requirements** [CVSS Base Metric v4]
 *****_ <:green_book:> **Privileges Required** 
 *****_ <:green_book:> **User Interaction** 
 
+****_ <:green_book:> <:dollar:> **Report Confidence **
+***** Not Defined, Unknown, Confirmed, Reasonable [CVSS Temporal]
+
+
 
 
 ***[#pink] **Technical Impact**
+****_ **System Impact Metrics** 
+*****_ <:green_book:> **Vulnerable System Impact Metrics** [CVSS Base Metric]
+******_ <:green_book:> **Confidentiality**  
+******_ <:green_book:> **Integrity**
+******_ <:green_book:> **Availability** 
+******_ <:green_book:> --Scope-- [replaced with Subsequent System Impact Metrics in CVSS v4
+*****_ <:green_book:> **Subsequent System Impact Metrics** [CVSS Base Metric v4]
+******_ <:green_book:> **Confidentiality** 
+******_ <:green_book:> **Integrity** 
+******_ <:green_book:> **Availability** 
 
-****_ <:green_book:> **Vulnerable System Impact Metrics** [CVSS Base Metric]
-*****_ <:green_book:> **Confidentiality**  
-*****_ <:green_book:> **Integrity**
-*****_ <:green_book:> **Availability** 
-*****_ <:green_book:> --Scope-- [replaced with Subsequent System Impact Metrics in CVSS v4]
 
 
-****_ <:green_book:> **Subsequent System Impact Metrics** [CVSS Base Metric v4]
-*****_ <:green_book:> **Confidentiality** 
-*****_ <:green_book:> **Integrity** 
-*****_ <:green_book:> **Availability** 
+**** **<:green_book:> MITRE CAPEC Technical Impact**
+*****_ **Logical Impact Methods**
 
-****_ <:green_book:> **Vulnerabilities by Impact Types** [CVEDetails.com]
-*****_ <:green_book:> **Privilege Escalation** 
-*****_ <:green_book:> **Code Execution** 
-*****_ <:green_book:> **Denial of Service ** 
-*****_ <:green_book:> **Information Leak ** 
-*****_ <:green_book:> **Bypass** 
+******_ **Execution (Integrity)  <&play-circle*3>**
+*******_ Unauthorized Code or Commands
+*******_ Alter Execution Logic
+*******_ Unexpected State
+******_ **Access (Access Control) <&account-login*3>**
+*******_ Gain privileges / assume identity (Access Control)
+*******_ Bypass protection mechanism
+******_ **Hide activities (Non Repudiation)  <&question-mark*3>**
+
+*****_ **Logical Impact**
+******_ **Read (Confidentiality) <&data-transfer-download*3>**
+*******_ Read Application Data
+*******_ Read Files or Directories
+*******_ Read Memory
+******_ **Modify (Integrity) <&data-transfer-upload*3>**
+*******_ Modify Application Data
+*******_ Modify Files or Directories
+*******_ Modify Memory
+******_ **Denial Of Service (Availability) <&ban*3>**
+*******_ Unreliable Execution
+********_ Crash, Exit, or Restart
+********_ Instability
+********_ Amplification
+*******_ Resource Consumption 
+********_ CPU
+********_ Memory
+********_ Other
 
 ****_ <:green_book:> **Microsoft Exploitability Index** [Microsoft Products]
-*****_ <:green_book:> **Elevation of Privilege** 
-*****_ <:green_book:> **Remote Code Execution** 
-*****_ <:green_book:> **Denial of Service ** 
-*****_ <:green_book:> **Information Disclosure ** 
-*****_ <:green_book:> **Security Feature Bypass** 
-*****_ <:green_book:> **Spoofing** 
-*****_ <:green_book:> **Tampering** 
+*****_ Elevation of Privilege
+*****_ Remote Code Execution
+*****_ Denial of Service
+*****_ Information Disclosure
+*****_ Security Feature Bypass
+*****_ Spoofing
+*****_ Tampering
+
 
 
 **[#orange]:==Per Asset 
@@ -143,10 +150,10 @@ Title Risk Remediation Taxonomy for CVEs
 ****** None, Low, Medium, High [CVSS Environmental]
 
 *****_ **Loss** 
-****** Productivity, Response, Replacement, Reputation, Competitive advantage, Judgments and fines [Factor Analysis of Information Risk (FAIR)]
+****** **Factor Analysis of Information Risk (FAIR)** Productivity, Response, Replacement, Reputation, Competitive advantage, Judgments and fines
 
 *****_ **Impact** 
-****** the impact on the Confidentiality/Integrity/Availability of the platform/tenants/data involved by the successful exploitation of the security vulnerability found [Vulnerability Impact Scoring System (VISS)]
+****** **Vulnerability Impact Scoring System (VISS)** the impact on the Confidentiality / Integrity / Availability of the platform/tenants/data involved by the successful exploitation of the security vulnerability found 
 
 *** **Likelihood** <<asset>>
 ****_ <:closed_book:> **Incident Response** has the Asset been attacked?
