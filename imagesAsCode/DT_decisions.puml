@@ -29,13 +29,17 @@ Title Decision Tree Decision Nodes Inputs
 *** ** Y: Known Exploit Available (OR)**
 **** **public, poc_public, commercial, private, virus_malware, wormified:** <:dollar:> Vendor DB
 ** **Active**
-*** **Y: Known Actively Exploited** **(OR)**
-**** **Y:** <:closed_book:> **Bug Bounty**
-**** **Y:** <:closed_book:> **Incident Response**
-**** **Y:** <:green_book:> **CISA Known Exploited Vulnerabilities <CISA KEV>**
-**** **Y:** <:green_book:> **(EPSS Exploit Prediction Scoring System) Score above Threshold**
-**** **Y:** <:dollar:> **Vendor DBs**
-**** **Y:** <:green_book:> <:dollar:> **Cyber Threat Intelligence (CTI)** e.g. social media
+*** **(OR)**
+**** **Y: Known Actively Exploited** **(OR)**
+***** **Y:** <:closed_book:> **Bug Bounty**
+***** **Y:** <:closed_book:> **Incident Response**
+***** **Y:** <:green_book:> **CISA Known Exploited Vulnerabilities <CISA KEV>**
+***** **Y:** <:green_book:> **(EPSS Exploit Prediction Scoring System) Score above Threshold**
+***** **Y:** <:dollar:> **Vendor DBs**
+***** **Y:** <:green_book:> <:dollar:> **Cyber Threat Intelligence (CTI)** e.g. social media
+**** **Y: Weaponized Exploit**
+***** **Y:** <:green_book:>  **Metasploit**
+***** **Y:** <:green_book:>  **Nuclei**
 
 
 * **Automatable** 

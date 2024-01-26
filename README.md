@@ -37,7 +37,7 @@ The inputs for the Decision Tree Decision Nodes - and associated data sources fr
 
 ![RiskRemediationTop](./images/DT_decisions.png)
 
-Diagram Source: [RiskRemediation_top.puml](./imagesAsCode/DT_decisions.puml)
+Diagram Source: [DT_decisions.puml](./imagesAsCode/DT_decisions.puml)
 
 
 # Risk-based Decision Tree Decisions
@@ -58,6 +58,12 @@ The diagram(s) are written in the wonderful [Plantuml](https://plantuml.com).
   ````
   plantuml *.puml -o ./images
   ````
+* or type 
+
+  ````
+  make
+  ````
+
 
 # License
 This project is licensed under the terms of the Apache 2.0 open source license. Please refer to [LICENSE](./LICENSE.txt) for the full terms.
