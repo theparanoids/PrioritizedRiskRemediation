@@ -63,7 +63,7 @@ Title Risk Remediation Taxonomy for CVEs/vulnerabilities
 *****_ <:green_book:> **Privileges Required** 
 *****_ <:green_book:> **User Interaction** 
 
-****_ <:green_book:> <:dollar:> **Report Confidence **
+****_ <:green_book:> <:dollar:> **Report Confidence**
 ***** Not Defined, Unknown, Confirmed, Reasonable [CVSS Temporal]
 
 
@@ -130,7 +130,15 @@ Title Risk Remediation Taxonomy for CVEs/vulnerabilities
 ----
 ----;
 
-*** **Impact** <<asset>>
+
+*** **Threat** <<asset>>
+****_ **Likelihood** 
+*****_ <:closed_book:> **Incident Response** has the Asset been attacked?
+*****_ <:closed_book:> **Number of assets with that CVE (SBOMs)**
+*****_ <:closed_book:> **Number of instances of that CVE (SBOMs)**
+*****_ **Vulnerability Chaining**
+*****_ <:dollar:> **Average Time to Exploit Product (VendorDB)**
+*****_ <:dollar:> **Frequency of Exploit for the Product (VendorDB)**
 
 ****_ **Exploitable**
 *****_ <:closed_book:> **Affected stack component versions in place** e.g. SpringShell Spring Framework exploitability depended on certain JDK versions
@@ -138,35 +146,34 @@ Title Risk Remediation Taxonomy for CVEs/vulnerabilities
 *****_ <:closed_book:> <:writing_hand:> **Compensating controls in place** e.g. WAF, SW configuration
 
 ****_ **System Exposure** 
-*****_ <:closed_book:> <:writing_hand:> **Asset Inventory **
+*****_ <:closed_book:> <:writing_hand:> **Asset Inventory**
 ***** Small, Controlled, Open [CMU SEI SSVC] 
+
+
+*** **Technical Impact** <<asset>>
+
+**** **Vulnerability Impact Scoring System (VISS)** the impact on the Confidentiality / Integrity / Availability of the platform/tenants/data involved by the successful exploitation of the security vulnerability found 
 
 ****_ <:closed_book:> <:writing_hand:> **Asset Value <Asset Inventory>**
 *****_ **Value of the data it processes/serves**
 *****_ **Geo location (Regulatory)**
 *****_ **Performing Critical function aka Critical Product or Crown Jewel**
 
-*****_ **Requirements for Confidentiality, Integrity, Availability (CIA) **
+*****_ **Requirements for Confidentiality, Integrity, Availability (CIA)**
 ****** None, Low, Medium, High [CVSS Environmental]
+
 
 *****_ **Loss** 
 ****** **Factor Analysis of Information Risk (FAIR)** Productivity, Response, Replacement, Reputation, Competitive advantage, Judgments and fines
 
-**** **Vulnerability Impact Scoring System (VISS)** the impact on the Confidentiality / Integrity / Availability of the platform/tenants/data involved by the successful exploitation of the security vulnerability found 
 
-*** **Likelihood** <<asset>>
-****_ <:closed_book:> **Incident Response** has the Asset been attacked?
-****_ <:closed_book:> **Number of assets with that CVE (SBOMs)**
-****_ <:closed_book:> **Number of instances of that CVE (SBOMs)**
-****_ **Vulnerability Chaining**
-****_ <:dollar:> **Average Time to Exploit Product (VendorDB)**
-****_ <:dollar:> **Frequency of Exploit for the Product (VendorDB)**
+
 
 
 ** **Remediation** <<remediation>> 
 ***_ **Remediation Level: patch available?**
-****_ <:green_book:> <:dollar:> ** Tool e.g. SCA**
-****_ <:green_book:> <:dollar:> ** Vendor DBs** 
+****_ <:green_book:> <:dollar:> **Tool e.g. SCA**
+****_ <:green_book:> <:dollar:> **Vendor DBs** 
 
 **** Not Defined, Official Fix, Temporary Fix, Workaround, Unavailable [CVSS Temporal]
 **** Available, Unavailable [CISA SSVC]
@@ -182,6 +189,8 @@ Title Risk Remediation Taxonomy for CVEs/vulnerabilities
 ***_ <:closed_book:> **Effort**
 ****_ <:busts_in_silhouette:> **Developers**
 **** CMU SEI discusses “unit of work” for Remediation activitities
+
+
 
 legend
     |= Icon |= Description |
