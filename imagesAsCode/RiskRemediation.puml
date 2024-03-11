@@ -36,8 +36,8 @@ Title Risk Remediation Taxonomy for CVEs/vulnerabilities
 
 
 
-****_ **Likelihood of Exploit** How likely is it to be exploited? 
-*****_ **Known evidence or activity**
+****_ **Likelihood of Exploitation** How likely is it to be exploited? 
+*****_ **Known Evidence or Activity**
 ******_ **Known Actively Exploited in your Organization**
 *******_ <:closed_book:> **Bug Bounty** has the CVE been exploited?
 *******_ <:closed_book:> **Incident Response** has the CVE been exploited? 
