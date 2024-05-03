@@ -26,7 +26,7 @@ Title Decision Tree Decision Nodes Inputs
 * **Exploitation**
 ** **None**
 ** **Poc**
-*** ** Y: Known Exploit Available (OR)**
+*** **Y: Known Exploit Available (OR)**
 **** **public, poc_public, commercial, private, virus_malware, wormified:** <:dollar:> Vendor DB
 ** **Active**
 *** **(OR)**
